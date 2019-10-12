@@ -11,7 +11,7 @@
 <div id="chartHum"></div>
 <script>
   var __eon_pubnub = new PubNub({
-    subscribeKey: "sub-c-d66fe224-d493-11e9-bcc0-82128b712eba"
+    subscribeKey: "sub-c-yourkey"
   });
   chart = eon.chart({
     pubnub: __eon_pubnub,
@@ -60,7 +60,7 @@
 
 <script>
   var __eon_pubnub = new PubNub({
-    subscribeKey: "sub-c-d66fe224-d493-11e9-bcc0-82128b712eba"
+    subscribeKey: "sub-c-yourkey"
   });
   chart = eon.chart({
     pubnub: __eon_pubnub,
@@ -86,7 +86,7 @@
       }
     },
     transform: function(data) {
-      return { eon: { Temperature: data.temperature_celcius } };
+      return { eon: { Temperature: data.temperature_celsius } };
     }
   });
 </script>
